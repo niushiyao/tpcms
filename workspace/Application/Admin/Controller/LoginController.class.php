@@ -11,5 +11,14 @@ class LoginController extends Controller {
 
     	return $this->display();
     }
-
+	
+	/**
+	* 登录验证方法
+	* @author niushiyao
+	* @date 2016-09-11
+	*/
+	public function check()
+	{
+		print_r($_POST);
+	}
 }
