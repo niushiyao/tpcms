@@ -25,8 +25,8 @@ var login = {
 			{
 				return dialog.error(result.message);
 			}else{
-				
-				return dialog.success(result.message,'admin.php?c=index');
+                location.href='admin.php?c=index';
+				//return dialog.success(result.message,'admin.php?c=index');
 			}
 		},'JSON');
 	}
