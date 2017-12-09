@@ -31,10 +31,12 @@
             <div class="input-group">
               <span class="input-group-addon">栏目</span>
               <select class="form-control" name="catid">
-                <option value='' >全部分类</option>
+                <option value='0' <if condition="$catid eq 0">selected</if>>全部分类</option>
                 
-                <option value="" ></option>
-                
+                <foreach name='frontMenu' item='menu'>
+                   <option value="{$menu.menu_id}" <if condition="$catid eq $menu['menu_id']">selected</if>>{$menu.name}</option>
+                </foreach>
+               
               </select>
             </div>
           </div>
@@ -42,7 +44,7 @@
           <input type="hidden" name="a" value="index"/>
           <div class="col-md-3">
             <div class="input-group">
-              <input class="form-control" name="title" type="text" value="" placeholder="文章标题" />
+              <input class="form-control" name="title" type="text" value="{$title}" placeholder="文章标题" />
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
@@ -58,7 +60,7 @@
               <table class="table table-bordered table-hover singcms-table">
                 <thead>
                 <tr>
-                  <th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>
+                  <th width="10"><input type="checkbox" id="position_all" value=""></th>
                   <th width="14">排序</th>
                   <th>id</th>
                   <th>标题</th>
@@ -72,38 +74,57 @@
                 </thead>
                 <tbody>
                 
+                <foreach name='newsList' item='new'>
                   <tr>
-                    <td><input type="checkbox" name="pushcheck" value="{$new.news_id}"></td>
-                    <td><input size=4 type='text'  name='' value=""/></td><!--6.7-->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                  	<td><input type="checkbox" name="news_ids" value="{$new.news_id}"></td>
+                    <td><input size=4 type='text' name='listorder' value="{$new.listorder}"/></td>
+                    <td>{$new.news_id}</td>
+                    <td>{$new.title}</td>
+                    <td>{$new.catid|getCateName=$frontMenu,###}</td>
+                    <td>{$new.copyfrom|getCopyFromById}</td>
+                    <td><img src="{$new.thumb}" width="100" height="100"></td>
                     <td>
-                      
+                      {$new.create_time|date='Y-m-d H:i:s',###}
                     </td>
-                    <td></td>
-                    <td><span  attr-status=""  attr-id="" class="sing_cursor singcms-on-off" id="singcms-on-off" ></span></td>
-                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="" ></span>
-                      <a href="javascript:void(0)" id="singcms-delete"  attr-id=""  attr-message="删除">
+                    <td>{$new.status|getStatus}</td>
+                    
+                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$new.news_id}" ></span>
+                      <a href="javascript:void(0)" id="singcms-delete"  attr-id="{$new.news_id}"  attr-message="删除">
                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                      </a>
+
+                      <a href="{$server_name}?c=Index&a=detail&id={$new.news_id}" target="_blank">
+                        <span aria-hidden="true">预览</span>
                       </a>
 
                     </td>
                   </tr>
-                
+                </foreach>
 
                 </tbody>
               </table>
               <nav>
 
-              <ul >
-                
-              </ul>
+	            <ul class="pagination">
+	                {$page_html}
+	            </ul>
 
             </nav>
               
             </form>
+
+			<div class="col-md-3">
+            	<div class="input-group">
+              		<span class="input-group-addon">推荐位</span>
+              		<select class="form-control" name="posid" id="position_id">
+		                <option value='0' <if condition="$posid eq 0">selected</if>>请选择</option>
+		                <foreach name='positionList' item='position'>
+		                   <option value="{$position.id}" <if condition="$posid eq $position['id']">selected</if>>{$position.name}</option>
+		                </foreach>
+		              </select>
+            	</div>
+          	</div>
+		  	<button id="sub_position" type="button" class="btn btn-info">提交到推荐位</button>
 
           </div>
         </div>
@@ -130,5 +151,14 @@
     'listorder_url' : '/admin.php?c=content&a=listorder',
     'push_url' : '/admin.php?c=content&a=push',
   }
+  
+  //全诜，全不选
+  $("#position_all").click(function(event){
+	if($(this).is(':checked') == true){
+		$("input[type=checkbox][name=news_ids]").prop("checked",true);
+	}else{
+		$("input[type=checkbox][name=news_ids]").prop("checked",false);
+	}
+  });
 </script>
 <include file="Index/footer" />

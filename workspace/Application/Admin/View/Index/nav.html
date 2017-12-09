@@ -27,13 +27,11 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li >
-        <a href=""><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+     <volist name="adminMenus" id="menu">
+      <li {$menu.c|getActive}>
+        <a href="/admin.php?c={$menu.c}<if condition="$menu.f != 'index'">&a={$menu.f}</if>"><i class="fa fa-fw fa-dashboard"></i> {$menu.name}</a>
       </li>
-      <li>
-        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
-      </li>
-
+      </volist>
     </ul>
   </div>
   <!-- /.navbar-collapse -->

@@ -18,10 +18,16 @@ var login = {
 		}
 		
 		//执行ajax异步请求
-		var url = "/index.php?m=admin&c=login&a=check";
+		var url = "/admin.php?c=login&a=check";
 		var data = {"username":username,"password":password};
 		$.post(url,data,function(result){
-			
-		});
+			if(!result.status)
+			{
+				return dialog.error(result.message);
+			}else{
+				
+				return dialog.success(result.message,'admin.php?c=index');
+			}
+		},'JSON');
 	}
 }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{$basic_info.title}</title>
+  <meta name="description" content="{$basic_info.description}">
+  <meta name="Keywords" content="{$basic_info.keywords}">
+  <link rel="stylesheet" href="/Public/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/Public/css/home/main.css" type="text/css" />
+</head>
+<body>
+<header id="header">
+  <div class="navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="">
+          <img src="/Public/images/logo.png" alt="" width="107" height="66">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/" <if condition="$Think.get.id eq ''">class="curr"</if>>首页</a></li>
+        <foreach name='menus' item='menu'>
+        <li><a href="/?c=Index&a=catlist&id={$menu.menu_id}" <if condition="$Think.get.id eq $menu['menu_id']">class="curr"</if>>{$menu.name}</a></li>
+        </foreach>
+      </ul>
+    </div>
+  </div>
+</header>

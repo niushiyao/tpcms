@@ -1,0 +1,541 @@
+[ 2016-11-13T20:41:55+08:00 ] 127.0.0.1 /admin.php?c=Content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0460s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id DESC  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE (  1=1 AND status != -1  ) LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT * FROM `cms_news` WHERE (  1=1 AND status != -1  ) ORDER BY news_id DESC,listorder DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027001s ]
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 190 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.303018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.303018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T20:48:27+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T21:22:55+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:23:22+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:23:25+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:27:26+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:27:29+08:00 ] 127.0.0.1 /admin.php?c=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Cache
+
+[ 2016-11-13T21:27:50+08:00 ] 127.0.0.1 /admin.php?c=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Cache
+
+[ 2016-11-13T21:27:52+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-13T21:27:53+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.3310s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:27:55+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:28:53+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:28:54+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T21:30:39+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T21:34:00+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:34:06+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T21:34:37+08:00 ] 127.0.0.1 /admin.php?c=Content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id DESC  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE (  1=1 AND status != -1  ) LIMIT 1   [ RunTime:0.1880s ]
+SQL: SELECT * FROM `cms_news` WHERE (  1=1 AND status != -1  ) ORDER BY news_id DESC,listorder DESC LIMIT 0,10   [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 190 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-13T21:34:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T21:34:42+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE (  1=1 AND status != -1  ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_news` WHERE (  1=1 AND status != -1  ) ORDER BY news_id DESC,listorder DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 190 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T21:34:45+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` = 27 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cms_news_content` WHERE `news_id` = 27 LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-13T21:34:48+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0090s ]
+SQL: UPDATE `cms_news` SET `title`='冷空气将影响北方 局地降温达8℃以上',`small_title`='冷空气将影响北方',`thumb`='/upload/2016/10/06/57f5ee91d4afc.jpg',`title_font_color`='#ed568b',`catid`='8',`copyfrom`='1',`description`='冷空气将影响北方',`keywords`='冷空气',`update_time`='1479044088',`username`='admin' WHERE `news_id` = 27 [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0080s ]
+SQL: UPDATE `cms_news_content` SET `content`='&amp;lt;p&amp;gt;
+	你好
+&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+	我好
+&amp;lt;/p&amp;gt;',`update_time`='1479044088' WHERE `news_id` = 27 [ RunTime:0.0010s ]
+
+[ 2016-11-13T21:34:49+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\BaseModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of Common\Model\BaseModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\wamp\www\tpcms\Application\Common\Model\BaseModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( status != -1 AND type = 1 ) ORDER BY listorder DESC, menu_id DESC  [ RunTime:0.0010s ]
+SQL: SELECT `menu_id`,`name` FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY `listorder` DESC,menu_id DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id DESC  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE (  1=1 AND status != -1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_news` WHERE (  1=1 AND status != -1  ) ORDER BY news_id DESC,listorder DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 190 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+NOTIC: [8] Undefined variable: posid D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

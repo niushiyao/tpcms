@@ -71,13 +71,9 @@
   <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav nav_list">
-      <li >
-        <a href=""><i class="fa fa-fw fa-dashboard"></i> 首页</a>
-      </li>
-      <li>
-        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i>菜单管理</a>
-      </li>
-
+     <?php if(is_array($adminMenus)): $i = 0; $__LIST__ = $adminMenus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($menu["c"])); ?>>
+        <a href="/admin.php?c=<?php echo ($menu["c"]); if($menu["f"] != 'index'): ?>&a=<?php echo ($menu["f"]); endif; ?>"><i class="fa fa-fw fa-dashboard"></i> <?php echo ($menu["name"]); ?></a>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
   <!-- /.navbar-collapse -->

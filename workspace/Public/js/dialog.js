@@ -39,5 +39,31 @@ var dialog = {
             btn : ['确定'],
         });
     },
+    
+    //删除的弹出层
+    deleteinfo : function(url,data,message,succ_jump_url)
+    {
+		layer.open({
+			type : 0,
+			title: '是否删除？',
+			btn : ['Yes','No'],
+			icon : 3,
+			closeBtn : 2,
+			content : '是否确定' + message + "？",
+			scrollbar : true,
+			yes : function(){
+				//执行删除的跳转
+				$.post(url,data,function(result){
+					if(result.status)
+					{
+						return dialog.success(result.message,succ_jump_url);
+					}else{
+						return dialog.error(result.message);
+					}
+				},'JSON');
+			}
+			
+		});
+	}
 }
 

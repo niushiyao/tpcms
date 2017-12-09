@@ -1,0 +1,25 @@
+<div class="col-sm-3 col-md-3">
+        <div class="right-title">
+          <h3>文章排行</h3>
+          <span>TOP ARTICLES</span>
+        </div>
+        <div class="right-content">
+          <ul>
+              <foreach name="article_order" item="article">
+                  <li class="num{$key+1} curr">
+                    <a href="">{$article.title}</a>
+                    <if condition="$key eq 0">
+                    <div class="intro">
+                      {$article.description}...
+                    </div>
+                    </if>
+                  </li>
+              </foreach>
+          </ul>
+        </div>
+        <foreach name="ads_news_right" item="ad">
+        <div class="right-hot">
+          <img src="{$ad.thumb}" alt="" width="330" height="215">
+        </div>
+        </foreach>
+      </div>

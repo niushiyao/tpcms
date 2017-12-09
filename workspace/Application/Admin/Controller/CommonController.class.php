@@ -6,12 +6,13 @@ use Think\Controller;
  */
 class CommonController extends Controller {
 
-
 	public function __construct() {
 		
 		parent::__construct();
 		$this->_init();
+		$this->getAdminMenu();
 	}
+	
 	/**
 	 * 初始化
 	 * @return
@@ -21,8 +22,11 @@ class CommonController extends Controller {
 		$isLogin = $this->isLogin();
 		if(!$isLogin) {
 			// 跳转到登录页面
-			$this->redirect('/admin.php?c=login');
+			//$this->redirect('/admin.php?c=login');
 		}
+
+		//网站域名
+		$this->assign("server_name",C("SERVER_NAME"));
 	}
 
 	/**
@@ -42,10 +46,18 @@ class CommonController extends Controller {
 		if($user && is_array($user)) {
 			return true;
 		}
-
 		return false;
 	}
-
 	
-
+	/**
+	* 获取后台菜单列表
+	* @author niushiyao
+	* @date   2016-09-22
+	*/
+	public function getAdminMenu()
+	{
+		$condition = 'status != -1 AND type = 1';
+		$adminMenus = D("Menu")->get_list($condition,"*","listorder DESC, menu_id DESC");
+		$this->assign('adminMenus',$adminMenus);
+	}
 }

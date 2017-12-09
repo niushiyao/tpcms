@@ -29,8 +29,11 @@
                 <div class="col-md-3">
                     <div class="input-group">
                         <span class="input-group-addon">推荐位</span>
-                        <select class="form-control" name="position_id">
-                                <option value=""></option>
+                        <select class="form-control" name="posid">
+	                        <option value="0">请选择</option>
+	                        <foreach name='positionList' item='position'>
+			                   <option value="{$position.id}" <if condition="$posid eq $position['id']">selected</if>>{$position.name}</option>
+			                </foreach>
                         </select>
                     </div>
                 </div>
@@ -38,7 +41,7 @@
                 <input type="hidden" name="a" value="index"/>
                 <div class="col-md-3">
                     <div class="input-group">
-                        <input class="form-control" name="title" type="text" value="" placeholder="文章标题" />
+                        <input class="form-control" name="title" type="text" value="{$search_title}" placeholder="文章标题" />
                 <span class="input-group-btn">
                   <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
                 </span>
@@ -65,29 +68,32 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <foreach name="PositionContentList" item="content">
                             <tr>
-                                <td><input size=4 type='text'  name='' value=""/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><input size=4 type='text'  name='listorder' value="{$content.listorder}"/></td>
+                                <td>{$content.id}</td>
+                                <td>{$content.title}</td>
+                                <td>{$content.create_time|date='Y-m-d H:i:s',###}</td>
+                                <td><img src="{$content.thumb}" width="100" height="100"></td>
                                 <td>
-                                    <span  attr-status="0"  attr-id="" class="sing_cursor singcms-on-off" id="singcms-on-off" ></span>
+                                    <span attr-status="0"  attr-id="{$content.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$content.status|getStatus}</span>
                                 </td>
                                 <td>
-                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="" ></span>
-                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id=""  attr-message="删除">
+                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$content.id}" ></span>
+                                    <a href="javascript:void(0)" id="singcms-delete"  attr-id="{$content.id}"  attr-message="删除">
                                         <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
                                     </a>
                                 </td>
                             </tr>
-
+						</foreach>
                         </tbody>
                     </table>
                     </from>
-                    <div>
-                        <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" ><span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>更新排序</button>
-                    </div>
+                    <nav>
+                        <ul class="pagination">
+                            {$page_html}
+                        </ul>
+                    </nav>
                 </div>
             </div>
 

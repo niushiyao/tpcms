@@ -37,8 +37,10 @@
 						<label for="inputname" class="col-sm-2 control-label">选择推荐位:</label>
 						<div class="col-sm-5">
 							<select class="form-control" name="position_id">
-
-									<option value=""></option>
+								<option value="0">请选择</option>
+		                        <foreach name='positionList' item='position'>
+				                   <option value="{$position.id}" <if condition="$posid eq $position['id']">selected</if>>{$position.name}</option>
+				                </foreach>
 							</select>
 						</div>
 					</div>
