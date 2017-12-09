@@ -13,12 +13,10 @@ class LoginController extends CommonController {
 	* @date   2016-09-12
 	* @return
 	*/
-    public function index(){
-		if($this->isLogin())
-		{
-			//redirect("/admin.php?c=index");
-		}
-    	return $this->display();
+    public function index()
+    {
+        $this->assign('title','网站管理后台');
+    	$this->display();
     }
 	
 	/**
@@ -42,11 +40,11 @@ class LoginController extends CommonController {
 		$res = D('Admin')->get_rows(array('username' => $username));
 		if(!$res)
 		{
-			show(false,'该用户不存在');
+			show(false,'用户名错误');
 		}
 		if($res['password'] != getMd5Pwd($password))
 		{
-			show(false,'用户名密码不正确');
+			show(false,'密码不正确');
 		}
 		session('adminUser', $res);
 		session(array('name' => 'adminUser','expire' => 3600));
